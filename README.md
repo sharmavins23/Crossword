@@ -3,6 +3,21 @@
 Following an interesting conversation with my father, I attempted to make this
 crossword in order to play around with puzzlemaking as a whole.
 
+However, the entire project was relatively tedious from start to finish. I
+utilized [Crosserville](https://www.crosserville.com/) to help fill in the
+blanks, but as I was manually creating the HTML site itself, I spent a genuinely
+_ridiculous_ amount of time setting up the board. I'm sure I could have written
+tools to automate that process; However, that would have been infeasibly long as
+well.
+
+The crossword is designed out of a QR code, which actually stands in as one of
+the major clues. I'm quite happy with how it turned out, and I think if I did
+not work with the limitation of writing it myself, I would have enjoyed it
+significantly more.
+
+Check out the site demonstration
+[here](https://sharmavins23.github.io/crossword).
+
 # License TL;DR
 
 This project is distributed under the MIT license. This is a paraphrasing of a
