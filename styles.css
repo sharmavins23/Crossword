@@ -1,6 +1,7 @@
 :root {
     --cell-size: 40px;
     --font-family: "Roboto", sans-serif;
+    --transition-time: 0.1s;
 }
 
 body {
@@ -44,6 +45,20 @@ body {
     font-family: var(--font-family);
     font-size: 1.5em;
     font-weight: bold;
+
+    transition: var(--transition-time) linear;
+}
+
+.board > input.correct,
+.board > .numbercell > input.correct {
+    transition: var(--transition-time) linear;
+    background-color: lightgreen;
+}
+
+.board > input.incorrect,
+.board > .numbercell > input.incorrect {
+    transition: var(--transition-time) linear;
+    background-color: lightcoral;
 }
 
 .board > input.cell:focus,
