@@ -1,5 +1,6 @@
 // ===== Buttons ===============================================================
 
+// Clears the board for a 'new game'
 function clearBoard() {
     // Clear all the cells - All inputs in the div.board element
     var cells = document.querySelectorAll(".board input");
@@ -10,6 +11,7 @@ function clearBoard() {
 
 // ===== Board =================================================================
 
+// Handles cell validation on each key entry
 function cell(input) {
     // If the input is lowercase, capitalize it
     input.value = input.value.toUpperCase();
