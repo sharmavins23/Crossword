@@ -1,0 +1,59 @@
+:root {
+    --cell-size: 40px;
+    --font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+/* ===== Title ============================================================== */
+
+/* ===== Buttons ============================================================ */
+
+/* ===== Board ============================================================== */
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(21, var(--cell-size));
+    row-gap: 0px;
+    column-gap: 0px;
+
+    border: 2px solid black;
+}
+
+.board > input.cell {
+    width: calc(var(--cell-size) - 2px);
+    height: calc(var(--cell-size) - 2px);
+
+    border-radius: 0px;
+    border: 1px solid lightgray;
+
+    margin: 0px;
+    padding: 0px;
+
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.board > input.cell:focus {
+    outline: none;
+    background-color: lightcyan;
+}
+
+.board > input.black {
+    background-color: black;
+    pointer-events: none;
+    border: 1px solid black;
+}
+
+/* ===== Clues ============================================================== */
