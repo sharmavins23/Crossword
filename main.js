@@ -85,6 +85,8 @@ function showHideText() {
 
 // Clears the board for a 'new game'
 function clearBoard() {
+    if (!confirm("Are you sure you want to clear the board?")) return;
+
     // Clear all the cells - All inputs in the div.board element
     let cells = document.querySelectorAll(".board input");
     for (let i = 0; i < cells.length; i++) {

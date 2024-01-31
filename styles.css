@@ -13,11 +13,67 @@ body {
     justify-content: center;
 
     gap: 10px;
+
+    margin: 0px;
+    padding: 0px;
 }
 
 /* ===== Title ============================================================== */
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 850px;
+}
+
+.title > h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.title > p {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+}
+
 /* ===== Buttons ============================================================ */
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    padding-bottom: 10px;
+}
+
+.buttons > button {
+    padding: 10px;
+    font-family: var(--font-family);
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 2px;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    transition: var(--transition-time) linear;
+}
+
+.buttons > button:hover {
+    background-color: lightgray;
+    transition: var(--transition-time) linear;
+}
+
+.buttons > button:active {
+    background-color: gray;
+    transition: var(--transition-time) linear;
+}
 
 /* ===== Board ============================================================== */
 
@@ -88,3 +144,40 @@ body {
 }
 
 /* ===== Clues ============================================================== */
+
+.clues {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+    width: 850px;
+}
+
+.clues > h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.clues > h2 {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.clues > ol {
+    margin: 0px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+
+.clues > ol > li {
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.clues > ol > li::marker {
+    font-weight: bold;
+    font-style: normal;
+}
