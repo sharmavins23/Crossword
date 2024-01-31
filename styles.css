@@ -29,7 +29,8 @@ body {
     border: 2px solid black;
 }
 
-.board > input.cell {
+.board > input.cell,
+.board > .numbercell > input.cell {
     width: calc(var(--cell-size) - 2px);
     height: calc(var(--cell-size) - 2px);
 
@@ -45,7 +46,8 @@ body {
     font-weight: bold;
 }
 
-.board > input.cell:focus {
+.board > input.cell:focus,
+.board > .numbercell > input.cell:focus {
     outline: none;
     background-color: lightcyan;
 }
@@ -54,6 +56,20 @@ body {
     background-color: black;
     pointer-events: none;
     border: 1px solid black;
+}
+
+.board > .numbercell {
+    position: relative;
+}
+
+.board > .numbercell > label {
+    position: absolute;
+    top: 0.1em;
+    left: 0.2em;
+
+    font-family: var(--font-family);
+    font-size: 0.8em;
+    color: gray;
 }
 
 /* ===== Clues ============================================================== */
