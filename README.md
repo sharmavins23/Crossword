@@ -16,7 +16,7 @@ not work with the limitation of writing it myself, I would have enjoyed it
 significantly more.
 
 Check out the site demonstration
-[here](https://sharmavins23.github.io/crossword).
+[here](https://sharmavins23.github.io/Crossword/).
 
 # License TL;DR
 
